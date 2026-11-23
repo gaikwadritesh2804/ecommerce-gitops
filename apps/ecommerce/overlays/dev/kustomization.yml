@@ -5,7 +5,7 @@ namespace: ecommerce-dev
 
 resources:
   - ../../base
-  - namespace.yml
+
 
 images:
   - name: ecommerceacr2804.azurecr.io/ecommerce-user-service

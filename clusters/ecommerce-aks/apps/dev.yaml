@@ -4,11 +4,13 @@ metadata:
   name: ecommerce-dev
   namespace: flux-system
 spec:
+  dependsOn:
+    - name: ecommerce-dev-postgres
   interval: 5m
   path: ./apps/ecommerce/overlays/dev
   prune: true
   wait: true
-  timeout: 3m
+  timeout: 5m
   sourceRef:
     kind: GitRepository
     name: flux-system

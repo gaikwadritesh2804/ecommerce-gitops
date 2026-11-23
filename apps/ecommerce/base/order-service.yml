@@ -17,6 +17,19 @@ spec:
           image: ecommerceacr2804.azurecr.io/ecommerce-order-service:1.0
           ports:
             - containerPort: 8083
+          env:
+            - name: DB_URL
+              value: jdbc:postgresql://ecommerce-postgres:5432/orders_db
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: ecommerce-postgres-secret
+                  key: POSTGRES_USER
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: ecommerce-postgres-secret
+                  key: POSTGRES_PASSWORD
           resources:
             requests:
               cpu: 100m
