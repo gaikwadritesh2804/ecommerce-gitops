@@ -9,16 +9,16 @@ resources:
 
 images:
   - name: ecommerceacr2804.azurecr.io/ecommerce-user-service
-    newTag: "1.0"
+    newTag: "24"
 
   - name: ecommerceacr2804.azurecr.io/ecommerce-product-service
-    newTag: "1.0"
+    newTag: "24"
 
   - name: ecommerceacr2804.azurecr.io/ecommerce-order-service
-    newTag: "1.0"
+    newTag: "24"
 
   - name: ecommerceacr2804.azurecr.io/ecommerce-payment-service
-    newTag: "1.0"
+    newTag: "24"
 
   - name: ecommerceacr2804.azurecr.io/ecommerce-frontend
-    newTag: "1.0"
+    newTag: "24"
